@@ -16,12 +16,15 @@ $ 9z --help
 	Usage
 	  $ 9z [...]
 	Options
-	  --csgo  Prints only CS:GO
+	  --csgo        Show CS:GO
+	  --fortnite    Show Fortnite
 	Examples
 	  $ 9z
-	  unicorns & rainbows
+	  # Prints everything
 	  $ 9z --csgo
-	  ponies & rainbows
+	  # Prints CS:GO only
+	  $ 9z --csgo --fortnite
+	  # Prints CS:GO and Fortnite only
 ```
 
 ## Related
