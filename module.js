@@ -10,21 +10,25 @@ const nueveZeta = (csgo) => {
     res.on("data", (chunk) => (data += chunk));
     res.on("end", () => {
       const partidos = JSON.parse(data);
-      let table = new Table();
+      let table = new Table({
+        head: ["Fecha", "Versus", "Torneo", "Juego", "CS:GO?", "Fortnite?", "Academy?"],
+      });
       for (const partido of partidos) {
         const esAcademy = partido.equipo.nombre === "Academy";
         const esCSGO = partido.torneo.juego.nombre === "CS:GO";
+		const esFortnite = partido.torneo.juego.nombre === "Fortnite";
+		const fecha = partido.fecha.split('-').slice(1,3).reverse().join('/')
         table.push([
-          partido.fecha,
-          partido.hora,
+          `${fecha} ${partido.hora}`,
           partido.vs,
           partido.torneo.nombre,
           partido.torneo.juego.nombre,
-          esAcademy ? "Academy" : "",
           esCSGO,
+		  esFortnite,
+          esAcademy,
         ]);
       }
-	  console.log(table.toString());
+      console.log(table.toString());
     });
   });
 };
