@@ -1,25 +1,25 @@
 #!/usr/bin/env node
 import meow from 'meow';
-import unicornFun from './module.js';
+import nueveZeta from './module.js';
 
 const cli = meow(`
 	Usage
-	  $ unicorn-fun [input]
+	  $ 9z [...]
 	Options
-	  --postfix  Lorem ipsum  [Default: rainbows]
+	  --csgo  Prints only CS:GO
 	Examples
-	  $ cli-name
+	  $ 9z
 	  unicorns & rainbows
-	  $ cli-name ponies
+	  $ 9z --csgo
 	  ponies & rainbows
 `, {
 	importMeta: import.meta,
 	flags: {
-		postfix: {
-			type: 'string',
-			default: 'rainbows',
+		csgo: {
+			type: 'boolean',
+			default: false,
 		},
 	},
 });
 
-console.log(unicornFun(cli.input[0] || 'unicorns', cli.flags));
+console.log(nueveZeta(cli.flags.csgo));

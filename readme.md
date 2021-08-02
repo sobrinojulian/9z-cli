@@ -1,34 +1,30 @@
-# unicorn-fun-cli
+# 9z-cli
 
-> 🔥 My awesome command-line tool
+> 🖱️ CLI para [9z.games](https://9z.games)
 
 ## Install
 
 ```
-$ npm install --global unicorn-fun-cli
+$ npm install --global https://github.com/sobrinojulian/9z-cli
 ```
 
 ## Usage
 
 ```
-$ unicorn-fun --help
+$ 9z --help
 
-  Usage
-    $ unicorn-fun [input]
-
-  Options
-    --postfix  Lorem ipsum  [Default: rainbows]
-
-  Examples
-    $ cli-name
-    unicorns & rainbows
-    $ cli-name ponies
-    ponies & rainbows
+	Usage
+	  $ 9z [...]
+	Options
+	  --csgo  Prints only CS:GO
+	Examples
+	  $ 9z
+	  unicorns & rainbows
+	  $ 9z --csgo
+	  ponies & rainbows
 ```
 
-# Tip
-Add `alias fun='unicorn-fun'` to your `.zshrc/.bashrc`...
+## Related
 
-
-# Related
-- [sindresorhus/node-cli-boilerplate](https://github.com/sindresorhus/node-cli-boilerplate) - Inspiration for for this module
+- [Endpoint](https://9z.games/api/partidos) - Endpoint for this CLI
+- [Web App](https://9z.games/) - Original web app
