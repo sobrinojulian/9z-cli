@@ -28,3 +28,4 @@ $ 9z --help
 
 - [Endpoint](https://9z.games/api/partidos) - Endpoint for this CLI
 - [Web App](https://9z.games/) - Original web app
+- [Backlog](https://workflowy.com/s/9z-cli/kitwaLLOdxoipoTy)
