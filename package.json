@@ -9,6 +9,7 @@
     "test": "xo && ava"
   },
   "dependencies": {
+    "cli-table3": "^0.6.0",
     "meow": "^10.1.1"
   },
   "devDependencies": {
@@ -17,8 +18,11 @@
     "xo": "^0.37.1"
   },
   "xo": {
-    "rules" : {
-      "comma-dangle": ["error", "always-multiline"]
+    "rules": {
+      "comma-dangle": [
+        "error",
+        "always-multiline"
+      ]
     }
   }
 }
