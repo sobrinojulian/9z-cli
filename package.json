@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "type": "module",
+  "bin": {
+    "unicorn-fun": "cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js",
+    "test": "xo && ava"
+  },
+  "dependencies": {
+    "meow": "^10.1.1"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "execa": "^5.1.1",
+    "xo": "^0.37.1"
+  },
+  "xo": {
+    "rules" : {
+      "comma-dangle": ["error", "always-multiline"]
+    }
+  }
+}
