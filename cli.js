@@ -3,7 +3,7 @@ import meow from 'meow'
 import nueveZeta from './module.js'
 
 const cli = meow(
-  `
+`
 Usage
   $ 9z [...]
 Options

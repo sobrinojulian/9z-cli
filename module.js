@@ -29,11 +29,11 @@ function darFila(partido) {
 
 const nueveZeta = async (flags) => {
   const response = await fetch('https://9z.games/api/partidos');
-  const data = await response.json();
-  const partidos = data.filter(esVisible(flags))
+  const partidos = await response.json();
+  const filtrados = partidos.filter(esVisible(flags))
 
   const table = new Table({ head: ['Juego', 'Fecha', 'Versus', 'Torneo'] })
-  const filas = partidos.map(darFila)
+  const filas = filtrados.map(darFila)
   filas.forEach(element => table.push(element))
   console.log(table.toString())
 }
