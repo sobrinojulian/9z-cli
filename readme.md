@@ -18,13 +18,14 @@ $ 9z --help
 	Options
 	  --csgo        Show CS:GO
 	  --fortnite    Show Fortnite
+	  --valorant    Show Valorant
 	Examples
 	  $ 9z
 	  # Prints everything
 	  $ 9z --csgo
 	  # Prints CS:GO only
-	  $ 9z --csgo --fortnite
-	  # Prints CS:GO and Fortnite only
+	  $ 9z --fortnite
+	  # Prints Fortnite only
 ```
 
 ## Related
